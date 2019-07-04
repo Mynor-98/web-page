@@ -1,0 +1,671 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One&display=swap');
+
+/* Icono Menu Amburguesa */
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?wu37ye');
+    src:  url('../fonts/icomoon.eot?wu37ye#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?wu37ye') format('truetype'),
+      url('../fonts/icomoon.woff?wu37ye') format('woff'),
+      url('../fonts/icomoon.svg?wu37ye#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak-as: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-menu:before {
+    content: "\e900";
+  }
+ /* Terminan iconos */
+/* Variables */
+ 
+:root {
+    --white-color: #FFFFFF;
+    --blue-color: #1c242c;
+    --font: 'Fjalla One', sans-serif;
+    --font-two: 'Source Sans Pro';
+}
+/* Variables  */
+/* Inicia Grid */
+
+.container {
+
+    max-width: 1000px;
+    /* width: 100px; */
+    flex: 1;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}
+
+/* Termina grid */
+
+
+html,body{
+    background-color: var(--white-color);
+    padding:0px;
+    margin:0px;
+    font-family: 'Fjalla One';   
+}
+
+figure {
+    margin: 0px;
+}
+
+
+ol, li {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+h2 {
+    color:  #4592af;
+    text-transform: uppercase;
+    font-family: var(--font-two);
+    font-size: 25px;
+    margin: 20px 0px 40px 0px;
+}
+
+h1 h2 h3 h4 h5 h6
+{
+    font-family: var(--font);
+}
+
+p {
+    font-family: var(--font-two);
+}
+ /* Inicia Header */
+
+.header {
+    background-color: var(--white-color);
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    flex-wrap: wrap;
+}
+
+.menu {
+    height: inherit;
+}
+
+.header ol {
+    display: flex;
+    height: inherit;  
+}
+
+.header ol li {
+    height: inherit;
+}
+
+.header a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    height: inherit;
+    padding: 0px 20px 0px 20px;
+    color: blue;
+}
+
+ /* Termina Header */
+
+/* Inicia Seccion hero */
+
+.hero{
+    /* height: 300px; */
+    /* background-image: url("../img/hero.jpg"); */
+    background-color: var(--blue-color);
+    /* background-size: 500px 300px; */
+    /* background-repeat: no-repeat; */
+    /* background-position-x: right; */
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hero-image {
+    object-fit: cover;
+    z-index: 2;
+}
+
+ h1 {
+    font-size: 30px;
+    line-height: 1.5;
+    letter-spacing: -.2px;
+    padding: 0px 20px;
+    color: var(--white-color);
+    z-index: 1;
+}
+
+.portfolio h2 {
+    margin: 0 20px;
+    padding: 20px 0;
+}
+/* Termina Seccion hero */
+
+/* Inicia portafolio */
+
+.portfolio {
+    background-color: #f6f5f5;
+    padding: 20px 20px;   
+}
+
+.project {
+    border-radius: 10px;
+    background-color: var(--white-color);
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+
+.project-details {
+    width: 50%;
+}
+
+.img-container {
+    width: 50%;
+}
+
+.img-container img {
+    max-width: 100%;
+    
+}
+
+.project-title {
+    font-size: 30px;
+    margin: 10px 0px;
+}
+
+.project-course, 
+.project-date, 
+.project-url,
+.project-description  {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.project-description {
+    font-size: 20px;
+}
+
+.project strong {
+    font-family: var(--font);
+}
+
+.project, h3, h6 {
+    font-size: 16px;
+}
+
+/* Termina Portafolio */
+/* Inician los eventos */
+
+.container {
+    width: 100%;
+}
+
+.event {
+    /* margin: 1%;
+    width: 48%; */
+    margin: 10px;
+    width: 480px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #f4fbff;
+}
+
+.event-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+
+.event-list-title {
+    margin: 40px 20px;
+}
+.event-img {
+    width: 480px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.event-detail {
+    margin: 20px 40px;
+    margin-top: -40px;
+    background-color: var(--white-color);
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+
+.event-url  {
+    color: #056fff;
+    border: 1px solid;
+    padding: 8px 50px; 
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 5px;  
+}
+.event-url:hover {
+    color: var(--white-color);
+    border: 1px solid #056fff;
+    background-color: #056fff;
+    transition: 0.3s;
+}
+
+/* Terminan los eventos */
+
+/* Inicia Contacto */
+
+.contact {
+   background-color: #056fff;
+   color: var(--white-color);
+   height: 190px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+
+.social-link {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0px 10px;
+    background-size: 50px 50px;
+    margin: 0px 20px;
+}
+
+.social-link.twitter {
+    background-image: url('../img/twitter.svg');  
+}
+.social-link.facebook {
+    background-image: url('../img/facebook.svg');
+}
+.social-link.github {
+    background-image: url('../img/github.svg');
+}
+.social-link.instagram {
+    background-image: url('../img/instagram.svg');
+}
+
+.form-email input {
+    border: 1px gray;
+    border-radius: 5px;
+    border-style: solid;
+    padding: 10px 20px 10px 25px;
+    background-image: url('../img/envelope.svg');
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+    
+}
+
+.form-email button {
+    display: block;
+    background: transparent;
+    color: var(--white-color);
+    padding: 10px 0px;
+    width: 100px;
+    margin-top: 10px; 
+    border-radius: 5px;
+}
+.form-email button:hover {
+    color: #056fff;
+    background-color: var(--white-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-email h3 {
+    font-family: var(--font-two);
+}
+
+form {
+    margin: 0px 20px;
+}
+
+/* Finaliza contacto */
+
+/* Inicia el Footer */
+.footer {
+    height: 80px;
+    background-color: #1c242c;
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    flex-wrap: wrap;
+}
+
+.footer img {
+    vertical-align: middle;
+}
+
+.log-footer {
+    width: 90px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #87cc0b;
+}
+.footer a:hover {
+    color:var(--white-color);
+}
+
+p .log-footer {
+    padding: 0px 20px;
+}
+
+/* Termina el Footer */
+
+.html-video {
+    width: 480px;
+    height: 200px;
+}
+
+.flexible-video {
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%;
+    background: blue;
+    position: relative;
+}
+
+.youbute-video {
+    /* width: 100%;
+    height: auto; */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+
+
+.burger-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: rgba(0,0,0, 0.5);
+    display: none;
+    line-height: 40px;
+    text-align: center;
+    position: fixed;
+    z-index: 5;
+    top: 5px;
+    left: 5px;
+    color: var(--white-color);
+    font-size: 16px;
+
+}
+
+/* Descopt First  */
+@media screen and (max-width: 1023px ) {
+    /* Portafolio Title responsive */
+    .portfolio {
+        margin: 0;
+    } 
+     /* Hero Responsive */
+    .hero {
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        padding: 2em;
+    } 
+    .hero-image {
+        z-index: 1;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+    }
+    h1 {
+        font-size: 1.7em;
+        z-index: 2;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /* portafolio titulo */
+    .portfolio {
+        margin: 0;
+        padding-top: 0;
+        font-size: 1.3em;
+    } 
+    h2 {
+        margin: 0;
+        padding: 1em 1em 1em 1em;
+        font-size: 1.2em;
+        text-align: left;
+    }
+    /* Hero Responsive */
+    .burger-button {
+        display: block;
+    }
+
+    .menu {
+        position: fixed;
+        background: var(--white-color);
+        z-index: 4;
+        top: 0;
+        left: -100vw;
+        width: 100vw;
+        height: 100vw;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .3s;
+    }
+    .menu.is-active {
+        left: 0;
+    }
+    h1 {
+        z-index: 2;
+        position: relative;
+    }
+    .hero-image {
+        z-index: 1;
+        position: absolute;
+    }
+    /* Responsive Header */
+    .container {
+       display: block; 
+       height: auto;
+    }
+    .header ol {
+        display: block;
+        height: auto;
+    }
+    .header ol li {
+        height: 50px;
+    }
+    .header a {
+        justify-content: center;
+        height: 40px;
+        font-size: 1.5em;
+        margin-bottom: .5px;
+    }
+    .header .logo {
+        text-align: center;
+    }
+
+    /* Responsive Portafolio */
+    .project {
+        display: block;
+        margin: 0 10px 15px 10px;
+        padding: 20px;
+    }
+    .img-container {
+        width: auto;
+        text-align: center;
+    }
+    .project-details {
+        width: auto;
+        font-size: 16px;
+    }
+    .project-course, .project-date, .project-url {
+    margin: .3em 0;  
+    }
+    .project-title {
+        font-size: 1.5em;
+        margin-bottom: .3em;
+    }
+    .project-url {
+        font-size: 1em;
+    }
+    .project-course {
+        font-size: .9em;
+    }
+    .project-date {
+        font-size: 1em;
+    }
+    .project-description {
+        font-size: 1em;
+    }
+ /* Responsive eventos */
+    .event {
+        width: auto;
+        flex-shrink: initial;
+        display: block;
+        margin: 1em 2em;
+    }
+    .event img {
+        width: 100%;
+        max-height: 250px;
+        object-position: 25% 25%;
+    }
+
+    .event-detail {
+        margin: -2em .5em .5em;
+        padding: 1em; 
+    }
+    .event-title {
+        margin: .5em;
+    }
+    .event-description {
+        margin: .5em .3em 1.3em .3em;
+    }
+    .event-url {
+        margin: 1em;
+    }
+     /* experiencia Titulo */
+     .event-list-title{
+        margin: 1em;
+        padding: 0 .8em 0 .8em;
+        font-size: 1.3em;
+        text-align: left;
+    }
+    /* Responsive Contacto y Footer */
+    .contact {
+        height: auto;
+        padding: 1.5em 0;
+        text-align: center;
+        display: block;
+    }
+    
+    .form-email button {
+        margin: 1.5em auto;
+    }
+    .form-email h3 {
+        margin-top: 0;
+    }
+    .footer {
+        display: block;
+        text-align: center;
+        border: 1px solid transparent;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 480px ) {
+
+    .portfolio {
+        margin: 0;
+        padding-top: 0;
+        font-size: 1.3em;
+    } 
+    .portfolio h2 {
+        margin: 0 1em 0 1em;
+        padding: 1em 1em 1em 1em;
+        font-size: .7em;
+        text-align: left;
+    }
+    /* Portafolio responsive */
+    .event-list-title {
+        font-size: 1em;
+        text-align: left;
+    }
+
+    h1 {
+        font-size: 1em;
+        z-index: 2;
+        position: relative;
+    }
+    .hero-image {
+        z-index: 1;
+        position: absolute;
+    }
+    .project-details {
+        width: auto;
+        font-size: 14px;
+    }  
+    p .log-footer {
+        padding: 10px 20px;
+    }
+    .social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .social-link {
+        margin: 0 10px 0 10px;
+        width: 30px;
+        height: 30px;
+        background-size: 30px;
+    } 
+}
+
+@media screen and (max-width: 320px ) {
+   
+}
